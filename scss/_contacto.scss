@@ -1,3 +1,13 @@
+.contenedorContacto {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+        "header"
+        "contenedorPadre"
+        "contenedorMenu"
+        "contenedorFormulario"
+        "footer";
+}
 .contenedorFormulario {
     margin-top: 15px;
     margin-bottom: 15px;
