@@ -10,54 +10,54 @@
         "contenedorMenu"
         "contenedorFormulario"
         "footer";
+}
 
-    .contenedorFormulario {
-        margin-top: 15px;
-        margin-bottom: 15px;
+.contenedorFormulario {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    grid-area: contenedorFormulario;
+
+    .form {
         background-color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        grid-area: contenedorFormulario;
+        margin: auto;
+        width: 90%;
+        max-width: 400px;
+        padding: 4.5em 3em;
+        border-radius: 10px;
+        box-shadow: 0px 5px 10px --5px rgb(0, 0, 0 / 30%);
+        text-align: center;
 
-        .form {
-            background-color: white;
-            margin: auto;
-            width: 90%;
-            max-width: 400px;
-            padding: 4.5em 3em;
-            border-radius: 10px;
-            box-shadow: 0px 5px 10px --5px rgb(0, 0, 0 / 30%);
-            text-align: center;
+        .form_titulo {
+            font-size: 2rem;
+            margin-bottom: .5em;
+        }
 
-            .form_titulo {
-                font-size: 2rem;
-                margin-bottom: .5em;
-            }
+        .form_parrafo {
+            font-weight: 300;
+        }
 
-            .form_parrafo {
-                font-weight: 300;
-            }
+        .form_container {
+            margin-top: 3em;
 
-            .form_container {
-                margin-top: 3em;
-                
-                gap: 2.5em;
+            gap: 2.5em;
 
-                .formulario_grupo {
-                    position: relative;
+            .formulario_grupo {
+                position: relative;
 
-                    .form_input {
-                        width: 100%;
-                        background: none;
+                .form_input {
+                    width: 100%;
+                    background: none;
 
-                        font-size: 1rem;
-                        padding: .6em .3em;
-                        border: none;
-                        outline: none;
-                        border-bottom: 1px solid grey;
-                    }
+                    font-size: 1rem;
+                    padding: .6em .3em;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid grey;
                 }
             }
         }
