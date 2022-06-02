@@ -1,0 +1,19 @@
+/*FOOTER*/
+.footer {
+    grid-area: footer;
+    background-color: $barras;
+
+    div {
+        h3 {
+            color: white
+        }
+
+        section {
+            .tarjetas {
+                width: 70px;
+                height: 70px;
+                margin: 10px;
+            }
+        }
+    }
+}

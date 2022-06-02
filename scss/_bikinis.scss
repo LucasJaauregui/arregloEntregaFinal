@@ -1,0 +1,86 @@
+/*BIKINIS*/
+.contenedorBikinis {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas:
+        "header header header"
+        "contenedorPadre contenedorPadre contenedorPadre"
+        "contenedorMenu contenedorMenu contenedorMenu"
+        "tituloVentas tituloVentas tituloVentas"
+        "bikini1 bikini2 bikini3"
+        "bikini4 bikini5 bikini6"
+        "bikini7 bikini8 bikini9"
+        "footer footer footer";
+}
+
+@mixin galeriafotos ($gridarea) {
+    grid-area: $gridarea;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+
+    .galeria {
+        width: 400px;
+        height: 350px;
+        border: groove 2px gray;
+        border-radius: 50px;
+    }
+}
+.tituloVentas{
+    grid-area: tituloVentas;
+    display: flex;
+    justify-content: center;
+    
+    padding: 2%;
+    
+    width: 100%;
+    strong{
+        font-size: 40px;
+        border: black 5px double ; 
+        padding: 1%;
+    }
+}
+.bikini1 {
+    @include galeriafotos($bikini1)
+}
+
+.bikini2 {
+    @include galeriafotos($bikini2)
+}
+
+.bikini3 {
+
+    @include galeriafotos($bikini3)
+}
+
+.bikini4 {
+
+    @include galeriafotos($bikini4)
+}
+
+.bikini5 {
+
+    @include galeriafotos($bikini5)
+}
+
+.bikini6 {
+
+    @include galeriafotos($bikini6)
+}
+
+.bikini7 {
+
+    @include galeriafotos($bikini7)
+}
+
+.bikini8 {
+
+    @include galeriafotos($bikini8)
+}
+
+.bikini9 {
+
+    @include galeriafotos($bikini9)
+}

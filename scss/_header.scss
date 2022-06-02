@@ -1,0 +1,136 @@
+/*HEADER*/
+.contenedorInicio {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas:
+        "header header header"
+        "contenedorPadre contenedorPadre contenedorPadre"
+        "contenedorMenu contenedorMenu contenedorMenu"
+        "bannerSecundario bannerSecundario bannerSecundario"
+        "fotosInicio1 fotosInicio2 fotosInicio3"
+        "presentacionInicio presentacionInicio presentacionInicio"
+        "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+
+    .contenedorBanner {
+        background-color: $barras;
+        color: white;
+        height: auto;
+
+        .enlacehome {
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+        .mail {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+
+.contenedorPadre {
+    grid-area: contenedorPadre;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+    .contenedorLogo {
+        .logo {
+            margin: 10px;
+            display: inline-flex;
+            justify-content: flex-start;
+        }
+    }
+
+    .contenedorTitulo {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        font-family: 'Lora', serif;
+    }
+}
+
+/* Menu*/
+.contenedorMenu {
+    grid-area: contenedorMenu;
+    background-color: $barras;
+
+    .menu {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+
+        li {
+            padding: 20px;
+            display: flex;
+
+            a {
+                position: relative;
+                color: white;
+                text-decoration: none;
+                font-size: 20px;
+                letter-spacing: 1px;
+                padding: 0 10px;
+
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    background-color: palevioletred;
+                    height: 3px;
+                    width: 0;
+                    left: 0;
+                    bottom: -7px;
+                    transition: 0.3s;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    div {
+        .logowp {
+            width: 60px;
+            height: 60px;
+            position: fixed;
+            bottom: 10px;
+            right: 5px;
+            transition: all 1s;
+
+            &:hover {
+                transform: scale(1.2, 1.2);
+            }
+        }
+
+        .logoig {
+            width: 60px;
+            height: 60px;
+            position: fixed;
+            bottom: 80px;
+            right: 5px;
+            transition: all 1s;
+
+            &:hover {
+                transform: scale(1.2, 1.2);
+            }
+        }
+
+
+    }
+}

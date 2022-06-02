@@ -1,0 +1,53 @@
+/*NOSOTROS*/
+@mixin seccionNosotros ($gridarea) {
+    grid-area: $gridarea;
+    padding: 10px;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    .imagenLocacion{
+        width:"650px"; 
+        height:"450px";
+    }
+    .textoLocacion{
+        width: auto;
+        border: 3px solid black;
+        text-align: center;
+    }
+}
+
+.contenedorNosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+        "header header"
+        "contenedorPadre contenedorPadre"
+        "contenedorMenu contenedorMenu"
+        "tituloNosotros tituloNosotros"
+        "contenedorLocacion1 contenedorLocacion2"
+        "footer footer";
+}
+
+.tituloNosotros{
+    grid-area: tituloNosotros;
+    display: flex;
+    justify-content: center;
+    
+    padding: 2%;
+    
+    width: 100%;
+    strong{
+        font-size: 40px;
+        border-bottom: black 5px double ; 
+        padding: 1%;
+    }
+}
+.contenedorLocacion1 {
+    @include seccionNosotros($contenedorLocacion1)
+}
+.contenedorLocacion2 {
+    @include seccionNosotros($contenedorLocacion2)
+}
+

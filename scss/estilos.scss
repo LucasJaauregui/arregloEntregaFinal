@@ -1,0 +1,31 @@
+/*ESTILOS CSS*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// variables //
+$barras:black; 
+$bikini1:bikini1;
+$bikini2:bikini2;
+$bikini3:bikini3;
+$bikini4:bikini4;
+$bikini5:bikini5;
+$bikini6:bikini6;
+$bikini7:bikini7;
+$bikini8:bikini8;
+$bikini9:bikini9;
+$contenedorLocacion1:contenedorLocacion1;
+$contenedorLocacion2:contenedorLocacion2;
+// imports //
+@import "header";
+@import "main";
+@import "footer";
+@import "bikinis";
+@import "nosotros";
+@import "contacto";
+@import "mediaquerries";
+body {
+    font-family: 'Lora', serif;
+}

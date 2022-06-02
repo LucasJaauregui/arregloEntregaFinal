@@ -1,0 +1,56 @@
+/*MAIN*/
+.bannerSecundario {
+    grid-area: bannerSecundario;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+
+.fotosInicio1 {
+    grid-area: fotosInicio1;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+
+    .dibujo {
+        width: 400px;
+        height: 400px;
+
+    }
+}
+
+.fotosInicio2 {
+    grid-area: fotosInicio2;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+
+    .dibujo {
+        width: 400px;
+        height: 400px;
+
+    }
+}
+
+.fotosInicio3 {
+    grid-area: fotosInicio3;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+
+    .dibujo {
+        width: 400px;
+        height: 400px;
+
+    }
+}
+
+.presentacionInicio {
+    grid-area: presentacionInicio;
+    border: solid black;
+    margin: 10px 20px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}

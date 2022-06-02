@@ -1,0 +1,85 @@
+/*MEDIAQUERRIES*/
+/*mediaquerries para celular*/
+@media (max-width: 576px) {
+    .contenedorInicio {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, auto);
+        grid-template-areas:
+            "header"
+            "contenedorPadre"
+            "contenedorMenu"
+            "bannerSecundario"
+            "fotosInicio1"
+            "fotosInicio2"
+            "fotosInicio3"
+            "presentacionInicio"
+            "footer";
+    }
+
+    .contenedorBikinis {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(14, auto);
+        grid-template-areas:
+            "header"
+            "contenedorPadre"
+            "contenedorMenu"
+            "tituloVentas"
+            "bikini1"
+            "bikini2"
+            "bikini3"
+            "bikini4"
+            "bikini5"
+            "bikini6"
+            "bikini7"
+            "bikini8"
+            "bikini9"
+            "footer";
+    }
+
+    .contenedorContacto {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            "header"
+            "contenedorPadre"
+            "contenedorMenu"
+            "contenedorFormulario"
+            "footer";
+    }
+
+}
+
+
+/*mediaquerries para tablets and desktop*/
+@media screen and (min-width:576px) and (max-width:992px) {
+    .contenedorInicio {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, auto);
+        grid-template-areas:
+            "header"
+            "contenedorPadre"
+            "contenedorMenu"
+            "bannerSecundario"
+            "fotosInicio1"
+            "fotosInicio2"
+            "fotosInicio3"
+            "presentacionInicio"
+            "footer";
+    }
+
+    .contenedorBikinis {
+        grid-template-columns: 2fr;
+        grid-template-rows: repeat(10, auto);
+        grid-template-areas:
+            "header header"
+            "contenedorPadre contenedorPadre"
+            "contenedorMenu contenedorMenu"
+            "tituloVentas tituloVentas"
+            "bikini1 bikini2"
+            "bikini3 bikini4"
+            "bikini5 bikini6"
+            "bikini7 bikini8"
+            "bikini9 bikini9"
+            "footer footer";
+    }
+}
